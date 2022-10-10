@@ -5,6 +5,13 @@
     box-sizing: border-box;
 }
 
+/* HEADER */
+header{
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
+
 /* COMMON */
 body{
     background-color: tomato;
@@ -33,7 +40,7 @@ section{
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    color: red;
+    color: white;
 }
 
 .normal-number{
@@ -52,10 +59,53 @@ section{
     background-color: violet;
 }
 
-.hidden{
-    display: none;
+/* FORM */
+#user-input{
+    text-align: center;
 }
 
-.show{
+.container-form{
+    width: 50%;
+    margin: 0 auto;
+    color: white;
+}
+
+label{
+    font-size: 1.3rem;
     display: block;
+    margin-bottom: 1rem;
+}
+
+input[type="number"]{
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 30px;
+    width: 100%;
+    padding: .5rem 1rem;
+    margin-bottom: 1rem;
+    color: white;
+}
+
+input[type="number"]::placeholder{
+    opacity: 1;
+    color: whitesmoke;
+}
+
+input[type="number"]:focus{
+    outline: 1px solid white;
+}
+
+button{
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    padding: 1rem;
+    border-radius: 30px;
+    transition: all 1s linear;
+}
+
+button:hover{
+    background-color: whitesmoke;
+    color: black;
+    border: 1px solid black;
 }

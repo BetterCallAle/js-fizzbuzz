@@ -60,7 +60,6 @@ submitBtn.addEventListener("click", function() {
 cancelBtn.addEventListener("click", function() {
     row.innerHTML = ""
     userNumber.value = ""
-    errorAdvice.classList.add("hidden")
 })
 
 
