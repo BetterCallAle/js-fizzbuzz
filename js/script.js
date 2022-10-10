@@ -1,3 +1,7 @@
+//Estraggo elementi dal DOM
+const row = document.querySelector(".row")
+console.log(row);
+
 //Scrivo un ciclo che vada da 1 a 100
 for (let i = 1; i <= 100; i++){
 
@@ -7,16 +11,22 @@ for (let i = 1; i <= 100; i++){
         //la scritta sarà BUZZ
     let fizzBuzz = i
     if (i % 3 === 0) {
-        fizzBuzz="FIZZ"
+        fizzBuzz="FIZZ";
     } else if (i % 5 === 0) {
-        fizzBuzz ="BUZZ"
+        fizzBuzz ="BUZZ";
     }
 
     //SE il numero è sia divisibile per 3 che per 5
         //la scritta sarà FIZZBUZZ
     if(i % 3 === 0 && i % 5 === 0) {
-        fizzBuzz="FIZZBUZZ"
+        fizzBuzz="FIZZ BUZZ";
     }
 
-    console.log(i, fizzBuzz);
+    console.log(fizzBuzz);
+    const col = document.createElement("div");
+    console.log(col);
+    col.classList.add("col");
+    console.log(col);
+    col.innerHTML = fizzBuzz;
+    row.append(col)
 }
