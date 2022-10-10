@@ -41,14 +41,16 @@ section{
     align-items: center;
     flex-wrap: wrap;
     color: white;
+    box-shadow: 5px 5px 10px 0px #000000;
 }
 
 .normal-number{
-    background-color: steelblue;
+    background-color: white;
+    color: black;
 }
 
 .fizz{
-    background-color: greenyellow;
+    background-color: black;
 }
 
 .buzz{
