@@ -51,3 +51,11 @@ section{
 .fizz-buzz{
     background-color: violet;
 }
+
+.hidden{
+    display: none;
+}
+
+.show{
+    display: block;
+}
