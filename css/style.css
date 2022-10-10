@@ -6,6 +6,10 @@
 }
 
 /* COMMON */
+body{
+    background-color: tomato;
+}
+
 section{
     padding-top: 2rem;
 }
@@ -24,10 +28,26 @@ section{
     width: calc(100% / 7 - 1rem);
     margin-right: 1rem;
     margin-bottom: 2rem;
-    background-color: aqua;
     height: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    color: red;
+}
+
+.normal-number{
+    background-color: steelblue;
+}
+
+.fizz{
+    background-color: greenyellow;
+}
+
+.buzz{
+    background-color: teal;
+}
+
+.fizz-buzz{
+    background-color: violet;
 }

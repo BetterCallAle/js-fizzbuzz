@@ -10,22 +10,28 @@ for (let i = 1; i <= 100; i++){
     //ALTRIMENTI SE un numero è multiplo di 5
         //la scritta sarà BUZZ
     let fizzBuzz = i
+    let classItem = "normal-number" 
+
     if (i % 3 === 0) {
-        fizzBuzz="FIZZ";
+        fizzBuzz = "FIZZ";
+        classItem = "fizz"
     } else if (i % 5 === 0) {
-        fizzBuzz ="BUZZ";
+        fizzBuzz = "BUZZ";
+        classItem = "buzz"
     }
 
     //SE il numero è sia divisibile per 3 che per 5
         //la scritta sarà FIZZBUZZ
     if(i % 3 === 0 && i % 5 === 0) {
-        fizzBuzz="FIZZ BUZZ";
+        fizzBuzz= "FIZZ BUZZ";
+        classItem = "fizz-buzz"
     }
 
     console.log(fizzBuzz);
     const col = document.createElement("div");
     console.log(col);
     col.classList.add("col");
+    col.classList.add(classItem)
     console.log(col);
     col.innerHTML = fizzBuzz;
     row.append(col)
