@@ -30,7 +30,7 @@ submitBtn.addEventListener("click", function() {
 
         if (i % 3 === 0) {
             fizzBuzz = "FIZZ";
-            classItem = "fizz"
+            classItem = ""
         } else if (i % 5 === 0) {
             fizzBuzz = "BUZZ";
             classItem = "buzz"
@@ -46,7 +46,11 @@ submitBtn.addEventListener("click", function() {
         //creo l'elemento HTML con le sue classi
         const col = document.createElement("div");
         col.classList.add("col");
-        col.classList.add(classItem)
+
+        if (classItem !== ""){
+            col.classList.add(classItem)
+        }
+
         col.innerHTML = fizzBuzz;
         row.append(col);
     }
