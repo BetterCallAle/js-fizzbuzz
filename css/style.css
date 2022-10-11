@@ -40,17 +40,14 @@ section{
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    color: white;
     box-shadow: 5px 5px 10px 0px #000000;
-}
-
-.normal-number{
     background-color: white;
     color: black;
 }
 
 .fizz{
     background-color: black;
+    color: white;
 }
 
 .buzz{

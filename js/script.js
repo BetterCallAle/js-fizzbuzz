@@ -26,11 +26,11 @@ submitBtn.addEventListener("click", function() {
         //ALTRIMENTI SE un numero è multiplo di 5
             //la scritta sarà BUZZ
         let fizzBuzz = i
-        let classItem = "normal-number" 
+        let classItem = "" 
 
         if (i % 3 === 0) {
             fizzBuzz = "FIZZ";
-            classItem = ""
+            classItem = "fizz"
         } else if (i % 5 === 0) {
             fizzBuzz = "BUZZ";
             classItem = "buzz"
